@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Best Roblox Stylish Name Generater. Create 200+ Cool, Aesthetic & Fancy Roblox Display Name & Usernames with Symbols & Fonts. 1-Click Copy & Paste for Roblox.">
+        <meta name="keywords" content=" roblox stylish name, roblex name generater, roblox display name generater, roblox fonts, roblex aesthetic name,roblox username generater,roblox ool name, roblox fancy text, roblex symbols, roblox display name style, roblox nickname">
+        <meta name="robots" content="index, follow"> 
+        <title>Roblex Stylish Name Generator</title>
+        <link rel="icon" type="image/png" href="download (4).jfif ">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        /* 🌟 General Root & Variables */
+:root {
+    --primary-color: #ff4757; /* Gaming Red/Orange Accent */
+    --bg-dark: #12141c;       /* Deep Dark Background */
+    --card-bg: #1e2230;       /* Lighter Container Dark */
+    --text-main: #ffffff;
+    --text-muted: #a4b0be;
+}
+
+/* 📱 Container Setup */
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Restricts extra widening on PC */
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* ⌨️ Responsive Input Box */
+#input {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    background: #12141c;
+    border: 2px solid #2f3542;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.2);
+}
+
+/* 📋 Output List Grid */
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Spaces out each row */
+    margin-top: 15px;
+    max-height: 500px; /* Allows scrolling inside container if too long */
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* ⚡ Beautiful Responsive Item Row */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #262c3e;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #323a52;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* 🔠 Text Span Inside Item */
+.item span {
+    font-size: 18px; /* Big enough to read easily */
+    color: #fff;
+    word-break: break-all; /* Prevents long names from breaking layout on small phones */
+    font-family: inherit;
+    flex: 1;
+    padding-right: 15px;
+}
+
+/* 🖱️ Smart Gaming Copy Button */
+.item button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap; /* Keeps 'COPY' or 'COPIED!' on one line */
+    min-width: 80px; /* Prevents button size jumping when text updates */
+}
+
+.item button:hover {
+    background: #ff6b81;
+    box-shadow: 0 0 8px rgba(255, 71, 87, 0.4);
+}
+
+.item button:active {
+    transform: scale(0.95);
+}
+
+/* 📐 Mobile Specific Tweaks (Screen widths under 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .item {
+        padding: 10px 12px;
+    }
+    
+    .item span {
+        font-size: 16px; /* Slightly downsized for tiny mobile screens */
+    }
+    
+    .item button {
+        padding: 6px 12px;
+        font-size: 12px;
+        min-width: 70px;
+    }
+}
+
+    </style>
+    <body>
+ 
+        <div class="container">
+<a class="back" href="index.html">Back to Home</a>
+<p class="para" id="para"></p>
+            <h2>Roblex fonts</h2>
+            <input id="input" type="text" placeholder="Type your name here...." oninput="gen()">
+      
+
+            <div id="list"></div>
+
+            <p style="text-align: center; color: #444; font-size: 10px; margin-top: 30px;">Game and Unique Fonts - Fan Made. Not affiliatedwith any game company.</p>
+  </div>
+    </body>
+    <!-- <sript src="index.js"></sript> -->
+    <script>
+
+function gen(){
+    let name = document.getElementById("input").value.trim();
+    let list = document.getElementById("list");
+    list.innerHTML = "";
+ if (!name) return;
+const DECORATIONS = {
+     // 🎮 PUBG / BGMI STYLE (किलर, डेंजरस, और क्लैन नेम्स के लिए बेस्ट)
+   roblox: [
+        { pre: "ッ", suf: "ッ" }, { pre: "×", suf: "×" }, { pre: "⚡", suf: "⚡" },
+        { pre: "☆", suf: "☆" }, { pre: "★", suf: "★" }, { pre: "☽", suf: "☾" },
+        { pre: "☾", suf: "☽" }, { pre: "🛸", suf: "🛸" }, { pre: "🧸", suf: "🧸" },
+        { pre: "👾", suf: "👾" }, { pre: "🌌", suf: "🌌" }, { pre: "✨", suf: "✨" },
+        { pre: "₊˚⊹", suf: "⊹˚₊" }, { pre: "⚡︎", suf: "⚡︎" }, { pre: "🧋", suf: "🧋" },
+        { pre: "✿", suf: "✿" }, { pre: "☕", suf: "☕" }, { pre: "⛓️", suf: "⛓️" },
+        { pre: "⚔️", suf: "⚔️" }, { pre: "🖤", suf: "🖤" }, { pre: "🤍", suf: "🤍" },
+        { pre: "🦖", suf: "🦖" }, { pre: "🍭", suf: "🍭" }, { pre: "🧸", suf: "🧸" }
+    ]
+}
+
+
+   
+
+
+const MAPS = {
+    boldOutline: { 
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789", 
+        to:Array.from("𝕒𝕓𝕔𝕕𝕖𝕗𝕘𝕙𝕚𝕛𝕜𝕝𝕞𝕟𝕠𝕡𝕢𝕣𝕤𝕥𝕦𝕧𝕨𝕩𝕪𝕫𝔸𝔹ℂ𝔻𝔼𝔽𝔾ℍ𝕀𝕁𝕂𝕃𝕄ℕ𝕆ℙℚℝ𝕊𝕋𝕌𝕍𝕎𝕏𝕐ℤ𝟘𝟙𝟚𝟛𝟜𝟝𝟞𝟟𝟠𝟡")
+    },
+    cursiveBold: { 
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+        to: Array.from("𝓪𝓫𝓬𝓭𝓮𝓯𝓰𝓱𝓲𝓳𝓴𝓵𝓶𝓷𝓸𝓹𝓺𝓻𝓼𝓽𝓾𝓿𝔀𝔁𝔂𝔃𝓐𝓑𝓒𝓓𝓔𝓕𝓖贬𝓘𝓙𝓚𝓛𝓜𝓝𝓞𝓟𝓠𝓡𝓢𝓣𝓤𝓥𝓦齿𝓨𝓩") 
+    },
+    cursiveLight: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        to: Array.from("𝒶𝒷𝒸𝒹ℯ𝒻ℊ𝒽𝒾𝒿𝓀𝓁𝓂𝓃ℴ𝓅𝓆𝓇𝓈𝓉𝓊𝓋𝓌𝓍𝓎𝓏𝒜ℬ𝒞𝒟ℰℱ𝒢ℋℐ𝒥𝒦ℒℳ𝒩𝒪𝒫𝒬ℛ𝒮𝒯𝒰𝒱𝒲𝒳𝒴𝒵")
+    },
+    gothicBold: { 
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+        to: Array.from("𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅") 
+    },
+    gothicLight: { 
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+       to: Array.from("𝖆𝖇𝖈𝖉𝖊𝖋𝖌𝖍𝖎𝖏𝖐𝖑𝖒𝖓𝖔𝖕𝖖𝖗𝖘𝖙𝖚𝖛𝖜𝖝𝖞𝖟𝕬𝕭𝕮𝕯𝕰𝕱𝕲𝕳𝕴𝕵𝕶𝕷𝕸𝕹𝕺𝕻𝕼𝕽𝕾𝕿𝖀𝖁𝖂𝖃𝖄𝖅") 
+    },
+    circlesWhite: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        to:Array.from("ⓐⓑⓒⓓⓔⓕⓖⓗⓘⓙⓚⓛⓜⓝⓞⓟⓠⓡⓢⓣⓤⓥⓦⓧⓨⓩⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ⓪①②③④⑤⑥⑦⑧⑨")
+    },
+    circlesBlack: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        to:Array.from("🅟🅗🅞🅝🅣🅢🅜🅟🅐🅡🅚🅐🅑🅲🅳🅴🅵🅶🅷🅸🅹🅺🅻🅼🅽🅾🅿🆀🆁🆂🆃🆄🆅🆆🆇🆈🆪🅐🅑🅒🅓🅔🅦🇬🅗🅘🅿🅁🅛🅜🅝🅞🅟🅠🅁🅢🅣🅤🅥🅦🅧🅨🅩🄿🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿🅀🅁🅂🅃🅄🅅🅆🅇Feedback🅏")
+        },
+    squaresWhite: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        to:Array.from( "🄰🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿设定🅁🅂🅃🅄🅅🅆🅇🅈🅉🄰🄱🄲🄳🄴🄵🄶🄷🄸🄹🄺🄻🄼🄽🄾🄿设定🅁🅂🅃🅄🅅🅆🅇🅈🅉")
+    },
+    mathBold: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        to:Array.from( "𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐉𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗")
+    },
+    mathItalic: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        to:Array.from( "𝘢𝘣𝘤𝘥𝘦𝘧𝘨𝘩𝘪𝘫𝘬𝘭𝘮𝘯𝘰𝘱𝘲𝘳𝘴𝘵𝘶𝘷𝘸𝘹𝘺𝘻𝘈𝘉𝘊𝘋𝘌𝘍𝘎𝘏𝘐𝘑𝘓𝘔𝘕𝘖𝘗𝘘𝘙𝘚𝘛𝘜𝘝𝘞𝘟𝘠𝘡")
+    },
+    monospace: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+        to:Array.from( "𝚊𝚋𝚌𝚍𝚎𝚏𝚐𝚑𝚒𝚓𝚔𝚕𝚖𝚗𝚘𝚙𝚚𝚛𝚜𝚝𝚞𝚟𝚠𝚡𝚢𝚣𝙰𝙱𝙲𝙳𝙴𝙵𝙶𝙷𝙸𝙹𝙺𝙻𝙼𝙽𝙾𝙿𝚀𝚁𝚂𝚃𝚄𝚅𝚆𝚇𝚈𝚉𝟶𝟷𝟸𝟹𝟺𝟻𝟼𝟽𝟾𝟿")
+    },
+    smallCaps: {
+        from: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        to:Array.from( "ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀsᴛᴜᴠᴡxʏᴢ")
+    },
+    subscript: {
+        from: "abcdefghijklmnoprstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        to:Array.from( "ₐ𝄲𝄳𝄴ₑ𝄵𝄶ₕ𝄷ⱼₖₗₘ𝄸ₒₚ𝄹ᵣₛₜᵤᵥ𝄺ₓᵧ𝄻ₐ𝄲𝄳𝄴ₑ𝄵𝄶ₕ𝄷ⱼₖₗₘ𝄸ₒₚ𝄹ᵣₛₜᵤᵥ𝄺ₓᵧ𝄻")
+    }
+};
+
+
+
+        
+           function convertText(text, map) {
+    if (!map || !map.from || !map.to) return text;
+    
+    // Array.from लगाने से 'hello' के अक्षर और स्टाइलिश मैप बिल्कुल सही मैच होंगे
+    const textChars = Array.from(text); 
+    return textChars.map(char => {
+        let index = map.from.indexOf(char);
+        return index !== -1 ? map.to[index] : char;
+    }).join("");
+}
+
+
+
+
+
+ let baseStyles = {
+    normal: name,
+    boldOutline: convertText(name, MAPS.boldOutline),
+    cursiveBold: convertText(name, MAPS.cursiveBold),
+    cursiveLight: convertText(name, MAPS.cursiveLight),
+    gothicBold: convertText(name, MAPS.gothicBold),
+    gothicLight: convertText(name, MAPS.gothicLight),
+    circlesWhite: convertText(name, MAPS.circlesWhite),
+    circlesBlack: convertText(name, MAPS.circlesBlack),
+    squaresWhite: convertText(name, MAPS.squaresWhite),
+    mathBold: convertText(name, MAPS.mathBold),
+    mathItalic: convertText(name, MAPS.mathItalic),
+    monospace: convertText(name, MAPS.monospace),
+    smallCaps: convertText(name, MAPS.smallCaps),
+    subscript: convertText(name, MAPS.subscript),
+    spaced: name.split("").join(" "),        
+    dotted: name.split("").join("·"),         
+    starry: name.split("").join("★"),        
+    slashed: name.split("").join("/"),       
+    underlined: name.split("").join("_"),     
+    hyphen: name.split("").join("-"),       
+    wave: name.split("").join("~"),           
+    strike: name.split("").map(char => char + "\u0336").join(""), 
+    underlineDouble: name.split("").map(char => char + "\u0333").join("") 
+};
+
+
+
+    let decos = DECORATIONS.roblox;
+    
+    let count = 0;
+    decos.forEach(d=>{
+        Object.values(baseStyles).forEach(styleName =>{
+            if(count >= 200)
+                return;
+            // let styleName = toStyle(name,f);
+            let finalText = d.pre + styleName + d.suf;
+
+            let itemDiv = document.createElement("div");
+            itemDiv.className = "item";
+            
+            let textSpan = document.createElement("span");
+            textSpan.textContent = finalText;
+            
+            let copyBtn = document.createElement("button");
+            copyBtn.textContent = "copy";
+            copyBtn.onclick = () => {
+                navigator.clipboard.writeText(finalText);
+                copyBtn.textContent = "copied!";
+                setTimeout(() => copyBtn.textContent = "copy", 1500);
+            };
+            
+            itemDiv.appendChild(textSpan);
+            itemDiv.appendChild(copyBtn);
+            list.appendChild(itemDiv);
+            count++;
+        });
+        
+    });
+
+   
+}
+
+    </script>
+</html>

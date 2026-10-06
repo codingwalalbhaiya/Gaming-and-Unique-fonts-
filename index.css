@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0f;
+    color: #fff;
+    margin: 0;
+    font-family: system-ui;
+   padding: 20px;
+}
+
+.header{
+    padding: 0;
+    text-align: center;
+    /* position: sticky; */
+    top: 0;
+    box-shadow:0 2px 10px #0001;
+    z-index: 10;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    padding: 15px;
+  max-width: 800px;
+  max-height: 1800px;
+    margin: auto;
+}
+
+.card{
+    
+    background:linear-gradient(135deg, #1a1a25,#212130);
+    border: 1px solid #2a2a3a;
+    padding: 20px;
+    border-radius: 18px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+    
+
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.card h3{
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+
+.container{
+    max-width: 600px;
+    margin: auto;
+}
+
+.back{
+    color: #a855f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.para{
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+#input{
+    width: 100%;
+    padding: 16px;
+    background: #1a1a25;
+    border: 1px solid #2a2a3a;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+
+#input:focus{
+    border-color:#a855f7;
+}
+
+.list{
+    margin-top:20px;
+}
+
+
+
+.footer {
+    background-color: #1e2230; 
+    color: #a4b0be;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0 0 0;
+    margin-top: 50px;
+    border-top: 2px solid #323a52;
+    width: 100%;
+    
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-about {
+    flex: 1 1 300px;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer-logo span {
+    color: #ff4757; 
+    text-shadow: 0 0 10px rgba(255, 71, 87, 0.4);
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #747d8c;
+    margin: 0;
+}
+
+
+
+
+.footer-developer {
+    flex: 1 1 250px;
+}
+
+.footer-developer .dev-name {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.footer-developer .highlight {
+    color: #ff4757;
+    font-weight: bold;
+}
+
+.footer-developer .highlight a{
+    text-decoration: none;
+    font-size: 15px;
+     color: #ff4757;
+    margin: 0 0 8px 0;
+    
+}
+
+.footer-developer .dev-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #747d8c;
+    margin: 0;
+}
+
+
+.footer-bottom {
+    background-color: #12141c; 
+    padding: 20px 0;
+    border-top: 1px solid #262c3e;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-bottom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-disclaimer {
+    color: #57606f;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-top: 10px !important;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+}
+
+
+
+
+/* add */
+/* विज्ञापन को ग्रिड में सही से फिट करने के लिए */
+.grid-ad-banner {
+    grid-column: 1 / -1; /* यह कोड विज्ञापन को लेफ्ट से राइट पूरी विड्थ देगा */
+    width: 100%;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+/* मोबाइल और डेस्कटॉप पर एडसेंस के डिब्बे का साइज सेट रखने के लिए */
+.adsbygoogle {
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}

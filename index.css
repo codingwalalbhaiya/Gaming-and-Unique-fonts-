@@ -116,7 +116,7 @@ body{
 }
 
 .footer-about {
-    flex: 1 1 300px;
+    flex: 1 1 150px;
 }
 
 .footer-logo {
@@ -145,7 +145,7 @@ body{
 
 
 .footer-developer {
-    flex: 1 1 250px;
+    flex: 1 1 200px;
 }
 
 .footer-developer .dev-name {
@@ -200,6 +200,21 @@ body{
     margin-top: 10px !important;
 }
 
+#content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:20px ;
+    justify-content: center;
+}
+
+#content a{
+    color: #747d8c;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+
 @media (max-width: 600px) {
     .footer-container {
         flex-direction: column;
@@ -214,6 +229,11 @@ body{
   max-height: 2800px;
     margin: auto;
 }
+    
+    #content{
+        margin-left: 0px;
+    }
+
 
 }
 
